@@ -5,7 +5,7 @@ const { CleanWebpackPlugin } = require("clean-webpack-plugin");
 
 module.exports = {
   entry: {
-    index: path.resolve(`${__dirname}/../../src/index.js`)
+    index: path.resolve(`${__dirname}/../../src/index.ts`)
   },
   output: {
     filename: "[name].bundle.js",
@@ -18,6 +18,7 @@ module.exports = {
     }
   },
   resolve: {
+    extensions: [".ts", ".js"],
     alias: {
       "~": path.resolve(`${__dirname}/../../src`)
     }
@@ -36,6 +37,11 @@ module.exports = {
   ],
   module: {
     rules: [
+      {
+        test: /\.ts$/,
+        exclude: /node_modules/,
+        use: "ts-loader"
+      },
       {
         test: /\.mjs$/,
         include: /node_modules/,
