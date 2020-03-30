@@ -3,6 +3,6 @@ update_configs:
   - package_manager: "javascript"
     directory: "/"
     update_schedule: "weekly"
-    target_branch: "develop"
+    target_branch: "master"
     default_reviewers:
       - Alexandrshy
