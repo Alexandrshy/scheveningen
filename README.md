@@ -8,7 +8,7 @@ A simple starter for creating a project using [TypeScript](https://www.typescrip
 npm i
 ```
 
-## Start development
+## Start Development
 
 ```
 npm run develop
