@@ -61,13 +61,17 @@ module.exports = {
         include: path.resolve(`${__dirname}/../../src`)
       },
       {
-        test: /\.(woff?2|webp|svg|png|jpe?g|gif)(\?.*)?$/,
+        test: /\.(woff|woff2|webp|svg|png|jpeg|jpg|gif)$/,
         use: {
           loader: "file-loader",
           options: {
-            name: "[path][name].[ext]"
+            name: "img/[contenthash].[ext]"
           }
         }
+      },
+      {
+        test: /\.html$/i,
+        loader: "html-loader"
       }
     ]
   }
