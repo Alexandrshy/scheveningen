@@ -32,6 +32,10 @@ npm run types
 npm run lint
 ```
 
+## Planned Improvements
+- Add template support
+- Add stylelint
+
 ## Contributing
 
 At any time, I'll be happy to consider your suggestion for improvement 😊
