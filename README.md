@@ -40,8 +40,7 @@ npm run lint
 ## Planned Improvements
 - Add template support
 - Add stylelint
-- Automatic update of version after merge of PR in the master
-- Publishing the package in npm
+- ~~Automatic update of version after merge of PR in the master~~
 
 ## Contributing
 
