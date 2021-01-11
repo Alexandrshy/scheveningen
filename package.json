@@ -74,7 +74,7 @@
     "webpack-merge": "^5.4.0"
   },
   "dependencies": {
-    "@babel/polyfill": "^7.11.5",
+    "@babel/polyfill": "^7.12.1",
     "core-js": "^3.6.5"
   }
 }
